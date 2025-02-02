@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noddy Fitness</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> -->
+    <style>
+        body {
+            /* CSS Reset  */
+            /* font-family: 'Ubuntu', sans-serif; */
+            margin: auto;            
+            background: url(/img/manfitness.jpg);
+            /* this will make no repeatition of image  */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            color: white;
+
+        }
+
+        .left {
+            position: absolute;
+            top: 16px;
+            left: 24px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 16px auto;
+            border: 2px solid yellow;
+        }
+
+        .right {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: inline-block;
+            /* border: 2px solid white; */
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 28px 8px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(238, 123, 29);
+            text-decoration: underline;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+        }
+
+        .left img {
+            width: 110px;
+            /* to make image convert into white and black use filter  */
+            filter: brightness(0) invert(1);
+        }
+
+        .btn {
+            /* background-color: transparent; */
+            color:black;
+            margin: 5px 0px;
+            padding: 9px 8px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: rgb(239, 85, 13);
+        }
+
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left bar for LOGO -->
+        <div class="left">
+            <img src="/img/logo1.png" alt="">
+            <!-- <div>Noddy Fitness</div> -->
+        </div>
+        <!-- Mid Bar for Navigation menu -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for button -->
+        <div class="right">
+            <button class="btn">Email Us</button>
+            <button class="btn">Contact Us</button>
+        </div>
+    </header>
+
+</body>
+
+</html>

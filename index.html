@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noddy Fitness</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> -->
+    <style>
+        body {
+            /* CSS Reset  */
+            /* font-family: 'Ubuntu', sans-serif; */
+            margin: auto;            
+            background: url(/img/yoga-5281457_960_720.jpg);
+            /* this will make no repeatition of image  */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            color: white;
+
+        }
+
+        .left {
+            position: absolute;
+            top: 16px;
+            left: 24px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 16px auto;
+            /* border: 2px solid yellow; */
+        }
+
+        .right {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: inline-block;
+            /* border: 2px solid white; */
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 28px 8px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(176, 234, 117);
+            text-decoration: underline;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+        }
+
+        .left img {
+            width: 110px;
+            /* to make image convert into white and black use filter  */
+            filter: brightness(0) invert(1);
+        }
+
+        .btn {
+            background-color: transparent;
+            color: white;
+            margin: 5px 0px;
+            padding: 9px 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: yellow;
+        }
+
+        .container {
+            border: 2px solid yellow;
+            color: white;
+            margin: 15px 491px;
+            padding: 8px 25px;
+            border-radius: 2px;
+            width: 30%;
+        }
+
+        .form-gp input {
+            display: block;
+            text-align: center;
+            width: 340px;
+            /* padding: 8px;
+            margin: 4px; */
+            padding: 5px;
+            margin: 9px;
+            font-size: 17px;
+            border: 2px solid red;
+            border-radius: 12px;
+        }
+
+        .container h1 {
+            left: 12px;
+            
+
+        }
+
+        .container button {
+            display: block;
+            margin: -2px 9px;
+            padding: 4px 175px;
+            width: 55%;
+            color: black;
+            border-radius: 17px;
+            /* font-size: 12px; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left bar for LOGO -->
+        <div class="left">
+            <img src="/img/logo1.png" alt="">
+            <!-- <div>Noddy Fitness</div> -->
+        </div>
+        <!-- Mid Bar for Navigation menu -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for button -->
+        <div class="right">
+            <button class="btn">Email Us</button>
+            <button class="btn">Contact Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Agra City </h1>
+        <form action="noaction.php">
+            <div class="form-gp">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-gp">
+                <input type="number" placeholder="Enter your Age">
+            </div>
+            <div class="form-gp">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-gp">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form-gp">
+                <input type="email" placeholder="Enter your E-mail Id">
+            </div>
+            <div class="form-gp">
+                <input type="tel" placeholder="Enter your Phone no.">
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
